@@ -1,0 +1,74 @@
+/* ==========================================================================
+   Custom Stylesheet untuk PPDB SMK
+   Tema Warna: Color Hunt (Ungu/Biru)
+   Terintegrasi dengan Bootstrap 5
+   ========================================================================== */
+
+:root {
+    /* Palet Warna Utama */
+    --color-dark: #5409da;      /* Ungu Tua */
+    --color-primary: #4e71ff;   /* Biru Utama */
+    --color-secondary: #8dd8ff; /* Biru Muda */
+    --color-light: #bbfbff;     /* Biru Terang */
+    
+    /* Override Warna Primary Bootstrap (Opsional, agar menyatu) */
+    --bs-primary: #4e71ff;
+    --bs-primary-rgb: 78, 113, 255;
+}
+
+/* ==================== GLOBAL STYLES ==================== */
+body {
+    background-color: #f4f7f6; /* Warna latar belakang abu-abu sangat muda agar form lebih menonjol */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* ==================== CUSTOM UTILITY CLASSES ==================== */
+/* Latar Belakang (Backgrounds) */
+.bg-custom-dark { background-color: var(--color-dark) !important; color: #ffffff; }
+.bg-custom-primary { background-color: var(--color-primary) !important; color: #ffffff; }
+.bg-custom-secondary { background-color: var(--color-secondary) !important; color: #1a1a1a; }
+.bg-custom-light { background-color: var(--color-light) !important; color: #1a1a1a; }
+
+/* Teks (Text Colors) */
+.text-custom-dark { color: var(--color-dark) !important; }
+.text-custom-primary { color: var(--color-primary) !important; }
+.text-custom-secondary { color: var(--color-secondary) !important; }
+
+/* ==================== KUSTOMISASI KOMPONEN ==================== */
+
+/* Custom Button */
+.btn-custom {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: var(--color-dark);
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(84, 9, 218, 0.3);
+    transform: translateY(-1px);
+}
+
+/* Custom Card (Cocok untuk Form Login atau Dashboard) */
+.card-custom {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid var(--color-primary);
+}
+
+/* Kustomisasi Navbar */
+.navbar-custom {
+    background-color: var(--color-dark);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #ffffff !important;
+}
+.navbar-custom .nav-link:hover {
+    color: var(--color-secondary) !important;
+}
